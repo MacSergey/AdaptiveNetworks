@@ -264,7 +264,7 @@ namespace AdaptiveRoads.Data.NetworkExtensions {
             return ret;
         }
 
-        private DynamicFlags LaneTagsFlagsD =>
+        private DynamicFlags<NetInfo> LaneTagsFlagsD =>
             InfoExtD?.Lanes?[LaneInfoD]?.LaneTags?.Flags ?? DynamicFlagsUtil.NONE;
 
         public void RenderTrackInstance(RenderManager.CameraInfo cameraInfo, int layerMask) {
